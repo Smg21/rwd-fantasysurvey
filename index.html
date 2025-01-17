@@ -16,11 +16,11 @@
     <form id = "survey-form">
         <div class = "base-questions">
             <h4>Base Questions</h4>
-            <label id="name-label" for="name">What’s your name?:</label>
+            <label id="name-label" for="name">What be thy name, noble traveler?:</label>
             <input type="text" id="name" name="name" placeholder="Thaddeus Nightflame" required>
             <br><br>
             <!--Gender Drop Down-->
-            <label id = "gender-label" for = "gender-label">What do you identify as?</label>
+            <label id = "gender-label" for = "gender-label">What dost thou identify as?</label>
             <select id="dropdown" name="gender-label" onchange="handleGenderChange()" required>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
@@ -32,10 +32,10 @@
                  <input type="text" id="Other" name="Other" placeholder="Specify Here...">
               </div>
             <br><br>
-            <label id="email-label" for="email">Email (To Be Sent Results):</label>
+            <label id="email-label" for="email">Share thy scroll (email) that we may send thy results:</label>
             <input type="email" id="email" name="email" placeholder="Thadeus44!@gmail.com" required>
             <br><br>
-            <label id="number-label" for="number">What's thous age?:</label>
+            <label id="number-label" for="number">Declare thy years, for only those wise and seasoned may partake (18-65):</label>
             <input type="number" id="number" name="number" min = "18" max = "65" placeholder="18-65" required>
             <!--Must be between 18 and 65-->
             <br><br>
@@ -46,138 +46,138 @@
 
             <!--Question 1-->
 
-            <label for ="Q1" class = "questionz">Your character has been summoned by the king, but you overslept. What’s your excuse?</label>
+            <label for ="Q1" class = "questionz">The King hath summoned thee, but thou hast tarried too long. What tale dost thou weave to explain thy delay?</label>
             <br><br>
             <!--Option 1 for Q1-->
-            <label for="Q1">Bribe the guard to say I was there on time</label>
-            <input type = "radio" id="Q1" name = "Q1" value="Bribe the guard to say I was there on time">
+            <label for="Q1">I offered gold to the guard to swear I arrived on time</label>
+            <input type = "radio" id="Q1" name = "Q1" value="I offered gold to the guard to swear I arrived on time">
             <br><br>
             <!--Option 2 for Q1-->
-            <label for "Q1">A bard was singing outside my window all night. Couldn’t get a wink of sleep!</label>
-            <input type = "radio" id = "Q1" name = "Q1" value="A bard was singing outside my window all night. Couldn’t get a wink of sleep!">
+            <label for "Q1">A minstrel's song outside mine chambers stole mine slumber.</label>
+            <input type = "radio" id = "Q1" name = "Q1" value="A minstrel's song outside mine chambers stole mine slumber.">
             <br><br>
             <!--Option 3 for Q1-->
-            <label for "Q1">I was up a bit late looking for a cure for your ailment in the royal library</label>
-            <input type = "radio" id = "Q1" name = "Q1" value="I was up a bit late looking for a cure for your ailment in the royal library">
+            <label for "Q1">I was deep in study, searching for a cure to thine ailment in the royal library</label>
+            <input type = "radio" id = "Q1" name = "Q1" value="I was deep in study, searching for a cure to thine ailment in the royal library">
             <br><br>
             <!--Option 4 for Q1-->
-            <label for "Q1">The gods sent me a vision that required urgent interpretation.</label>
-            <input type = "radio" id = "Q1" name = "Q1" value="The gods sent me a vision that required urgent interpretation.">
+            <label for "Q1">The gods themselves visited me in dreams, and their message could not wait</label>
+            <input type = "radio" id = "Q1" name = "Q1" value="The gods themselves visited me in dreams, and their message could not wait">
             <br><br>
             <!--Option 5 for Q1-->
-            <label for "Q1">I was practicing my sword technique until dawn.</label>
-            <input type = "radio" id ="Q1" name = "Q1" value="I was practicing my sword technique until dawn.">
+            <label for "Q1">I practiced my blade's dance until the light of dawn.</label>
+            <input type = "radio" id ="Q1" name = "Q1" value="I practiced my blade's dance until the light of dawn.">
             <br><br>
 
             <h4>Question Two</h4>
 
             <!--Question 2-->
 
-            <label for="Q2" class = "questionz">You’re in a tavern, and someone challenges you to a duel. What’s your response?</label>
+            <label for="Q2" class = "questionz">In the raucous halls of a tavern, a rogue challenges thee to a duel. How dost thou respond?</label>
             <br><br>
             <!--Option 1 for Q2-->
-            <label for="Q2">Cast an illusion to make them think they already lost</label>
-            <input type = "radio" id="Q2" name = "Q2" value="Cast an illusion to make them think they already lost">
+            <label for="Q2">I cast an illusion, making them believe they have already been bested.</label>
+            <input type = "radio" id="Q2" name = "Q2" value="I cast an illusion, making them believe they have already been bested.">
             <br><br>
             <!--Option 2 for Q2-->
-            <label for="Q2">Offer to settle the matter with a friendly game of dice instead</label>
-            <input type = "radio" id="Q2" name = "Q2" value="Offer to settle the matter with a friendly game of dice instead">
+            <label for="Q2">I propose we settle the matter over a friendly game of dice.</label>
+            <input type = "radio" id="Q2" name = "Q2" value="I propose we settle the matter over a friendly game of dice.">
             <br><br>
             <!--Option 3 for Q2-->
-            <label for="Q2">Pretend I didn’t hear them and sneak out the back</label>
-            <input type = "radio" id="Q2" name = "Q2" value="Pretend I didn’t hear them and sneak out the back">
+            <label for="Q2">I feign deafness and make my escape through the rear door</label>
+            <input type = "radio" id="Q2" name = "Q2" value="I feign deafness and make my escape through the rear door">
             <br><br>
             <!--Option 4 for Q2-->
-            <label for="Q2">Flip the table drawing sword immediately</label>
-            <input type = "radio" id="Q2" name = "Q2" value="Flip the table drawing sword immediately">
+            <label for="Q2">I upend the table and draw steel without hesitation.</label>
+            <input type = "radio" id="Q2" name = "Q2" value="I upend the table and draw steel without hesitation.">
             <br><br>
             <!--Option 5 for Q2-->
-            <label for="Q2">Lecture them about the futility of violence until they lose interest</label>
-            <input type = "radio" id="Q2" name = "Q2" value="Lecture them about the futility of violence until they lose interest">
+            <label for="Q2">I deliver a speech on the futility of violence, hoping to dull their fervor.</label>
+            <input type = "radio" id="Q2" name = "Q2" value="I deliver a speech on the futility of violence, hoping to dull their fervor.">
             <br><br>
 
             <h4>Question Three</h4>
             <!--Question 3-->
 
-            <label for="Q3" class = "questionz">Your group is starving, and you have one loaf of bread. What do you do?</label>
+            <label for="Q3" class = "questionz">Thy party starves, and only one loaf of bread remains. What shalt thou do?</label>
             <br><br>
             <!--Option 1 for Q3-->
-            <label for="Q3">Enchant it to multiply the loaves</label>
-            <input type = "radio" id="Q3" name = "Q3" value="Enchant it to multiply the loaves">
+            <label for="Q3">I enchant the loaf to multiply tenfold.</label>
+            <input type = "radio" id="Q3" name = "Q3" value="I enchant the loaf to multiply tenfold.">
             <br><br>
             <!--Option 2 for Q3-->
-            <label for = "Q3"> Split it evenly.</label>
-            <input type = "radio" id="Q3" name = "Q3" value="Split it evenly.">
+            <label for = "Q3"> I divide the bread equally among all.</label>
+            <input type = "radio" id="Q3" name = "Q3" value="I divide the bread equally among all.">
             <br><br>
             <!--Option 3 for Q3-->
-            <label for = "Q3"> Attempt convincing someone it’s magical bread and trade it for gold or supplies</label>
-            <input type = "radio" id="Q3" name = "Q3" value="Attempt convincing someone it’s magical bread and trade it for gold or supplies">
+            <label for = "Q3"> I trade the loaf, convincing a fool it is bread of miracles</label>
+            <input type = "radio" id="Q3" name = "Q3" value="I trade the loaf, convincing a fool it is bread of miracles">
             <br><br>
             <!--Option 4 for Q3-->
-            <label for = "Q3"> Eat the bread, your strength is most needed</label>
-            <input type = "radio" id="Q3" name = "Q3" value=" Eat the bread, your strength is most needed">
+            <label for = "Q3">I devour it myself, for my strength is paramount to our survival.</label>
+            <input type = "radio" id="Q3" name = "Q3" value=" I devour it myself, for my strength is paramount to our survival.">
             <br><br>
             <!--Option 5 for Q3-->
-            <label for = "Q3"> Use it as bait to fish/hunt for food</label>
-            <input type = "radio" id="Q3" name = "Q3" value="Use it as bait to fish/hunt for food">
+            <label for = "Q3"> I use the bread as bait to hunt or fish for greater sustenance.</label>
+            <input type = "radio" id="Q3" name = "Q3" value="I use the bread as bait to hunt or fish for greater sustenance.">
             <br><br>
 
             <h4>Question Four</h4>
             <!--Question 4-->
 
-            <label for="Q4" class = "questionz">A wizard turns you into an animal! What are you most likely to become?</label>
+            <label for="Q4" class = "questionz">A mischievous wizard curses thee, transforming thee into an animal. What creature dost thou become?</label>
             <br><br>
             <!--Option 1 for Q4-->
-            <label for = "Q4"> Owlbear </label>
+            <label for = "Q4">An owlbear, fierce and wise.</label>
             <input type = "radio" id="Q4" name = "Q4" value="Owlbear">
             <br><br>
             <!--Option 2 for Q4-->
-            <label for = "Q4"> Snake </label>
+            <label for = "Q4"> A serpent, silent and cunning. </label>
             <input type = "radio" id="Q4" name = "Q4" value="Snake">
             <br><br>
             <!--Option 3 for Q4-->
-            <label for = "Q4"> Wolf </label>
+            <label for = "Q4">A wolf, loyal and strong.</label>
             <input type = "radio" id="Q4" name = "Q4" value="Wolf">
             <br><br>
             <!--Option 4 for Q4-->
-            <label for = "Q4"> Frog </label>
+            <label for = "Q4">A frog, small yet resilient.</label>
             <input type = "radio" id="Q4" name = "Q4" value="Frog">
             <br><br>
             <!--Option 5 for Q4-->
-            <label for = "Q4"> Cow </label>
+            <label for = "Q4"> A cow, peaceful and sturdy. </label>
             <input type = "radio" id="Q4" name = "Q4" value="Cow">
             <br><br>
 
             <h4>Question Five</h4>
             <!--Question 5-->
 
-            <label for="Q5" class = "questionz">You’ve been cursed with one of the following</label>
+            <label for="Q5" class = "questionz">The gods curse thee with an unusual affliction. Which dost thou bear?</label>
             <br><br>
             <!--Option 1 for Q5-->
-            <label for = "Q5">You fart loudly every time you lie</label>
-            <input type = "radio" id="Q5" name = "Q5" value="You fart loudly every time you lie">
+            <label for = "Q5">Every lie brings forth a thunderous fart.</label>
+            <input type = "radio" id="Q5" name = "Q5" value="Every lie brings forth a thunderous fart.">
             <br><br>
             <!--Option 2 for Q5-->
-            <label for = "Q5">Vegetables can and will talk to you, but only when they are being cooked, are dying, or are injured</label>
-            <input type = "radio" id="Q5" name = "Q5" value="Vegetables can and will talk to you, but only when they are being cooked, are dying, or are injured">
+            <label for = "Q5">Vegetables wail to thee only as they are chopped, boiled, or roasted.</label>
+            <input type = "radio" id="Q5" name = "Q5" value="Vegetables wail to thee only as they are chopped, boiled, or roasted.">
             <br><br>
             <!--Option 3 for Q5-->
-            <label for = "Q5">Every time you sneeze, you turn into a random small animal for 30 minutes or until you sneeze again</label>
-            <input type = "radio" id="Q5" name = "Q5" value="Every time you sneeze, you turn into a random small animal for 30 minutes or until you sneeze again">
+            <label for = "Q5">With each sneeze, thou art transformed into a random small beast.</label>
+            <input type = "radio" id="Q5" name = "Q5" value="With each sneeze, thou art transformed into a random small beast.">
             <br><br>
             <!--Option 4 for Q5-->
-            <label for = "Q5">Everything you touch gets stuck to your hands for five minutes.</label>
-            <input type = "radio" id="Q5" name = "Q5" value="Everything you touch gets stuck to your hands for five minutes.">
+            <label for = "Q5">All thou touchest sticks to thy hands for five long minutes.</label>
+            <input type = "radio" id="Q5" name = "Q5" value="All thou touchest sticks to thy hands for five long minutes.">
             <br><br>
             <!--Option 5 for Q5-->
-            <label for = "Q5">A sarcastic voice sounding like whomever you last spoke with narrates your every action which only you can hear</label>
-            <input type = "radio" id="Q5" name = "Q5" value="A sarcastic voice sounding like whomever you last spoke with narrates your every action which only you can hear">
+            <label for = "Q5">Thy every action is narrated by the sarcastic voice of the last mortal thou spake to.</label>
+            <input type = "radio" id="Q5" name = "Q5" value="Thy every action is narrated by the sarcastic voice of the last mortal thou spake to.">
             <br><br>
 
         </div>
         <div class = "more base questions">
             <h4>Question Six</h4>
-            <label class = "questionz" for = "Q6">What options best describe you? </label>
+            <label class = "questionz" for = "Q6">What words best describe thy nature?</label>
             <br><br>
             <label for ="Q6-Quirky">Quirky</label>
             <input type = "checkbox" id = "Q6-Quirky" name = "Q6-Quirky" value="Quirky">
@@ -217,9 +217,9 @@
             <br><br>
 
             
-            <label for = "Q7" class = "question">Did You Enjoy The Survey? Why or Why Not?</label>
+            <label for = "Q7" class = "question">Hast thou enjoyed this survey? If so, why? If not, pray tell thy grievances.</label>
             <br><br>
-            <textarea id = "Q7" name = "Q7" rows = "4" cols = "50" placeholder = "This survey was quite enjoyable because..."></textarea>
+            <textarea id = "Q7" name = "Q7" rows = "4" cols = "50" placeholder = "I found great joy in this survey for the following reasons..."></textarea>
             <br><br>
 
            
