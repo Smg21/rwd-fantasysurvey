@@ -1,0 +1,248 @@
++<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Forum -- Free Code Camp Based Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Macondo+Swash+Caps&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id = "title">Fantasy Archetype Survey Fun Forum</h1>
+    <p id = "description">Responsive Web Development Free Code Camp Survey Forum Project</p>
+    <p id = "description">Fill out the forum to discover what your fantasy archetype is!</p>
+    <form id = "survey-form">
+        <div class = "base-questions">
+            <h4>Base Questions</h4>
+            <label id="name-label" for="name">What’s your name?:</label>
+            <input type="text" id="name" name="name" placeholder="Thaddeus Nightflame" required>
+            <br><br>
+            <!--Gender Drop Down-->
+            <label id = "gender-label" for = "gender-label">What do you identify as?</label>
+            <select id="dropdown" name="gender-label" onchange="handleGenderChange()" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <!--Handling Specifying Other Gender Below Hidden Container-->
+            <div id="Other" style="display: none;">
+                <label for="Other">Please specify:</label>
+                 <input type="text" id="Other" name="Other" placeholder="Specify Here...">
+              </div>
+            <br><br>
+            <label id="email-label" for="email">Email (To Be Sent Results):</label>
+            <input type="email" id="email" name="email" placeholder="Thadeus44!@gmail.com" required>
+            <br><br>
+            <label id="number-label" for="number">What's thous age?:</label>
+            <input type="number" id="number" name="number" min = "18" max = "65" placeholder="18-65" required>
+            <!--Must be between 18 and 65-->
+            <br><br>
+        </div>
+        <div class = "fun-questions"> <!--radio buttons -->
+
+            <h4>Question One</h4>
+
+            <!--Question 1-->
+
+            <label for ="Q1" class = "questionz">Your character has been summoned by the king, but you overslept. What’s your excuse?</label>
+            <br><br>
+            <!--Option 1 for Q1-->
+            <label for="Q1">Bribe the guard to say I was there on time</label>
+            <input type = "radio" id="Q1" name = "Q1" value="Bribe the guard to say I was there on time">
+            <br><br>
+            <!--Option 2 for Q1-->
+            <label for "Q1">A bard was singing outside my window all night. Couldn’t get a wink of sleep!</label>
+            <input type = "radio" id = "Q1" name = "Q1" value="A bard was singing outside my window all night. Couldn’t get a wink of sleep!">
+            <br><br>
+            <!--Option 3 for Q1-->
+            <label for "Q1">I was up a bit late looking for a cure for your ailment in the royal library</label>
+            <input type = "radio" id = "Q1" name = "Q1" value="I was up a bit late looking for a cure for your ailment in the royal library">
+            <br><br>
+            <!--Option 4 for Q1-->
+            <label for "Q1">The gods sent me a vision that required urgent interpretation.</label>
+            <input type = "radio" id = "Q1" name = "Q1" value="The gods sent me a vision that required urgent interpretation.">
+            <br><br>
+            <!--Option 5 for Q1-->
+            <label for "Q1">I was practicing my sword technique until dawn.</label>
+            <input type = "radio" id ="Q1" name = "Q1" value="I was practicing my sword technique until dawn.">
+            <br><br>
+
+            <h4>Question Two</h4>
+
+            <!--Question 2-->
+
+            <label for="Q2" class = "questionz">You’re in a tavern, and someone challenges you to a duel. What’s your response?</label>
+            <br><br>
+            <!--Option 1 for Q2-->
+            <label for="Q2">Cast an illusion to make them think they already lost</label>
+            <input type = "radio" id="Q2" name = "Q2" value="Cast an illusion to make them think they already lost">
+            <br><br>
+            <!--Option 2 for Q2-->
+            <label for="Q2">Offer to settle the matter with a friendly game of dice instead</label>
+            <input type = "radio" id="Q2" name = "Q2" value="Offer to settle the matter with a friendly game of dice instead">
+            <br><br>
+            <!--Option 3 for Q2-->
+            <label for="Q2">Pretend I didn’t hear them and sneak out the back</label>
+            <input type = "radio" id="Q2" name = "Q2" value="Pretend I didn’t hear them and sneak out the back">
+            <br><br>
+            <!--Option 4 for Q2-->
+            <label for="Q2">Flip the table drawing sword immediately</label>
+            <input type = "radio" id="Q2" name = "Q2" value="Flip the table drawing sword immediately">
+            <br><br>
+            <!--Option 5 for Q2-->
+            <label for="Q2">Lecture them about the futility of violence until they lose interest</label>
+            <input type = "radio" id="Q2" name = "Q2" value="Lecture them about the futility of violence until they lose interest">
+            <br><br>
+
+            <h4>Question Three</h4>
+            <!--Question 3-->
+
+            <label for="Q3" class = "questionz">Your group is starving, and you have one loaf of bread. What do you do?</label>
+            <br><br>
+            <!--Option 1 for Q3-->
+            <label for="Q3">Enchant it to multiply the loaves</label>
+            <input type = "radio" id="Q3" name = "Q3" value="Enchant it to multiply the loaves">
+            <br><br>
+            <!--Option 2 for Q3-->
+            <label for = "Q3"> Split it evenly.</label>
+            <input type = "radio" id="Q3" name = "Q3" value="Split it evenly.">
+            <br><br>
+            <!--Option 3 for Q3-->
+            <label for = "Q3"> Attempt convincing someone it’s magical bread and trade it for gold or supplies</label>
+            <input type = "radio" id="Q3" name = "Q3" value="Attempt convincing someone it’s magical bread and trade it for gold or supplies">
+            <br><br>
+            <!--Option 4 for Q3-->
+            <label for = "Q3"> Eat the bread, your strength is most needed</label>
+            <input type = "radio" id="Q3" name = "Q3" value=" Eat the bread, your strength is most needed">
+            <br><br>
+            <!--Option 5 for Q3-->
+            <label for = "Q3"> Use it as bait to fish/hunt for food</label>
+            <input type = "radio" id="Q3" name = "Q3" value="Use it as bait to fish/hunt for food">
+            <br><br>
+
+            <h4>Question Four</h4>
+            <!--Question 4-->
+
+            <label for="Q4" class = "questionz">A wizard turns you into an animal! What are you most likely to become?</label>
+            <br><br>
+            <!--Option 1 for Q4-->
+            <label for = "Q4"> Owlbear </label>
+            <input type = "radio" id="Q4" name = "Q4" value="Owlbear">
+            <br><br>
+            <!--Option 2 for Q4-->
+            <label for = "Q4"> Snake </label>
+            <input type = "radio" id="Q4" name = "Q4" value="Snake">
+            <br><br>
+            <!--Option 3 for Q4-->
+            <label for = "Q4"> Wolf </label>
+            <input type = "radio" id="Q4" name = "Q4" value="Wolf">
+            <br><br>
+            <!--Option 4 for Q4-->
+            <label for = "Q4"> Frog </label>
+            <input type = "radio" id="Q4" name = "Q4" value="Frog">
+            <br><br>
+            <!--Option 5 for Q4-->
+            <label for = "Q4"> Cow </label>
+            <input type = "radio" id="Q4" name = "Q4" value="Cow">
+            <br><br>
+
+            <h4>Question Five</h4>
+            <!--Question 5-->
+
+            <label for="Q5" class = "questionz">You’ve been cursed with one of the following</label>
+            <br><br>
+            <!--Option 1 for Q5-->
+            <label for = "Q5">You fart loudly every time you lie</label>
+            <input type = "radio" id="Q5" name = "Q5" value="You fart loudly every time you lie">
+            <br><br>
+            <!--Option 2 for Q5-->
+            <label for = "Q5">Vegetables can and will talk to you, but only when they are being cooked, are dying, or are injured</label>
+            <input type = "radio" id="Q5" name = "Q5" value="Vegetables can and will talk to you, but only when they are being cooked, are dying, or are injured">
+            <br><br>
+            <!--Option 3 for Q5-->
+            <label for = "Q5">Every time you sneeze, you turn into a random small animal for 30 minutes or until you sneeze again</label>
+            <input type = "radio" id="Q5" name = "Q5" value="Every time you sneeze, you turn into a random small animal for 30 minutes or until you sneeze again">
+            <br><br>
+            <!--Option 4 for Q5-->
+            <label for = "Q5">Everything you touch gets stuck to your hands for five minutes.</label>
+            <input type = "radio" id="Q5" name = "Q5" value="Everything you touch gets stuck to your hands for five minutes.">
+            <br><br>
+            <!--Option 5 for Q5-->
+            <label for = "Q5">A sarcastic voice sounding like whomever you last spoke with narrates your every action which only you can hear</label>
+            <input type = "radio" id="Q5" name = "Q5" value="A sarcastic voice sounding like whomever you last spoke with narrates your every action which only you can hear">
+            <br><br>
+
+        </div>
+        <div class = "more base questions">
+            <h4>Question Six</h4>
+            <label class = "questionz" for = "Q6">What options best describe you? </label>
+            <br><br>
+            <label for ="Q6-Quirky">Quirky</label>
+            <input type = "checkbox" id = "Q6-Quirky" name = "Q6-Quirky" value="Quirky">
+            <br><br>
+            <label for ="Q6-Goofy">Goofy</label>
+            <input type = "checkbox" id = "Q6-Goofy" name = "Q6-Goofy" value="Goofy">
+            <br><br>
+            <label for ="Q6-Strong">Strong</label>
+            <input type = "checkbox" id = "Q6-Strong" name = "Q6-Strong" value="Strong">
+            <br><br>
+            <label for ="Q6-Smart">Smart</label>
+            <input type = "checkbox" id = "Q6-Smart" name = "Q6-Smart" value="Smart">
+            <br><br>
+            <label for ="Q6-Magical">Magical</label>
+            <input type = "checkbox" id = "Q6-Magical" name = "Q6-Magical" value="Magical">
+            <br><br>
+            <label for ="Q6-Spiritual">Spiritual</label>
+            <input type = "checkbox" id = "Q6-Spiritual" name = "Q6-Spiritual" value="Spiritual">
+            <br><br>
+            <label for ="Q6-Loyal">Loyal</label>
+            <input type = "checkbox" id = "Q6-Loyal" name = "Q6-Loyal" value="Loyal">
+            <br><br>
+            <label for ="Q6-Charismatic">Charismatic</label>
+            <input type = "checkbox" id = "Q6-Charismatic" name = "Q6-Charismatic" value="Charismatic">
+            <br><br>
+            <label for ="Q6-Realistic">Realstic</label>
+            <input type = "checkbox" id = "Q6-Realistic" name = "Q6-Realistic" value="Realistic">
+            <br><br>
+            <label for ="Q6-Stealthy">Stealthy</label>
+            <input type = "checkbox" id = "Q6-Stealthy" name = "Q6-Stealthy" value="Stealthy">
+            <br><br>
+            <label for ="Q6-Intimidating">Intimidating</label>
+            <input type = "checkbox" id = "Q6-Intimidating" name = "Q6-Intimidating" value="Intimidating">
+            <br><br>
+            <label for ="Q6-Understanding">Understanding</label>
+            <input type = "checkbox" id = "Q6-Understanding" name = "Q6-Understanding" value="Understanding">
+            <br><br>
+
+            
+            <label for = "Q7" class = "question">Did You Enjoy The Survey? Why or Why Not?</label>
+            <br><br>
+            <textarea id = "Q7" name = "Q7" rows = "4" cols = "50" placeholder = "This survey was quite enjoyable because..."></textarea>
+            <br><br>
+
+           
+        </div>
+
+        <div class = "submit">
+            <button type = "submit" id="submit" value="submit" >Submit</button>
+
+        </div>
+    </form>
+                  <!--Other Gender Specification Text Input-->
+                  <script>
+                    function handleGenderChange() {
+                      const genderDropdown = document.getElementById("dropdown");
+                      const otherGenderContainer = document.getElementById("Other");
+                      
+                      if (genderDropdown.value === "Other") {
+                        otherGenderContainer.style.display = "block";
+                      } else {
+                        otherGenderContainer.style.display = "none";
+                      }
+                    }
+                  </script>
+    
+</body>
+</html>
